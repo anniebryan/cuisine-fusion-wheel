@@ -8,16 +8,21 @@
 </head>
 
 <body>
-<div id="mainbox" class="mainbox">
-  <div id="box" class="box"></div>
-  <button id="button" class="spin">SPIN</button>
-</div>
-<div id="results" class="results">
-  <p id="cuisine1">Cuisine 1: </p>
-  <p id="cuisine2">Cuisine 2: </p>
-  <p id="reset-message"></p>
-</div>
-<script src="cuisineFusionWheel.js" charset="utf-8"></script>
+  <div class="row">
+    <div class="left-column">
+      <div class="mainbox">
+        <div id="box" class="box"></div>
+        <button id="button" class="spin">SPIN</button>
+      </div>
+    </div>
+    <div class="right-column">
+      <p class="result-text" id="result1">Cuisine 1: </p>
+      <p class="result-text" id="result2">Cuisine 2: </p>
+      <p class="result-text" id="wildcard">Wildcard: </p>
+    </div>
+  </div>
+<script type="module" src="cuisineFusionWheel.js" charset="utf-8"></script>
+<script type="module" src="allCuisines.js" charset="utf-8"></script>
 </body>
 
 </html>
